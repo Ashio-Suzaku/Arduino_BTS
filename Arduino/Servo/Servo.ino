@@ -1,11 +1,6 @@
 #include <rgb_lcd.h>
 #include <Servo.h>
 
-
-// Définitions pour les conversions
-#define Kelvin(C) (C + 273.15)
-#define Celsius(K) (K - 273.15)
-
 // Configuration des broches et constantes
 const byte potPin = A0;
 rgb_lcd lcd;
@@ -39,7 +34,6 @@ void loop() {
   lcd.print("°");
   lcd.setCursor(0, 1);
   lcd.print("Ton =");
-  //lcd.print(temperatureC, 2);
   lcd.print(" ms");
 
   servo.write(consigne);
