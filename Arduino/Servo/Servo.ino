@@ -1,4 +1,4 @@
- #include <rgb_lcd.h>
+#include <rgb_lcd.h>
 #include <Servo.h>
 
 
@@ -17,7 +17,7 @@ void setup() {
   lcd.begin(16, 2);  // Initialisation de l'écran LCD
   lcd.setRGB(0, 128, 255);  // Couleur de fond bleue
 
-  servo.attach(8);
+  servo.attach(8);  //Association du pin 8 au servomoteur
 
   Serial.begin(9600);
 
